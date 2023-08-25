@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "eCommmerce.Product.Infrastructure/1.0.0": {
+        "runtime": {
+          "eCommmerce.Product.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "eCommmerce.Product.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

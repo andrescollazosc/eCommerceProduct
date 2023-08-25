@@ -1,0 +1,11 @@
+D:\workspaces\workspace-study\eCommerceProduct\eCommmerce.Product.Infrastructure\bin\Debug\net7.0\eCommmerce.Product.Infrastructure.deps.json
+D:\workspaces\workspace-study\eCommerceProduct\eCommmerce.Product.Infrastructure\bin\Debug\net7.0\eCommmerce.Product.Infrastructure.dll
+D:\workspaces\workspace-study\eCommerceProduct\eCommmerce.Product.Infrastructure\bin\Debug\net7.0\eCommmerce.Product.Infrastructure.pdb
+D:\workspaces\workspace-study\eCommerceProduct\eCommmerce.Product.Infrastructure\obj\Debug\net7.0\eCommmerce.Product.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\workspaces\workspace-study\eCommerceProduct\eCommmerce.Product.Infrastructure\obj\Debug\net7.0\eCommmerce.Product.Infrastructure.AssemblyInfoInputs.cache
+D:\workspaces\workspace-study\eCommerceProduct\eCommmerce.Product.Infrastructure\obj\Debug\net7.0\eCommmerce.Product.Infrastructure.AssemblyInfo.cs
+D:\workspaces\workspace-study\eCommerceProduct\eCommmerce.Product.Infrastructure\obj\Debug\net7.0\eCommmerce.Product.Infrastructure.csproj.CoreCompileInputs.cache
+D:\workspaces\workspace-study\eCommerceProduct\eCommmerce.Product.Infrastructure\obj\Debug\net7.0\eCommmerce.Product.Infrastructure.dll
+D:\workspaces\workspace-study\eCommerceProduct\eCommmerce.Product.Infrastructure\obj\Debug\net7.0\refint\eCommmerce.Product.Infrastructure.dll
+D:\workspaces\workspace-study\eCommerceProduct\eCommmerce.Product.Infrastructure\obj\Debug\net7.0\eCommmerce.Product.Infrastructure.pdb
+D:\workspaces\workspace-study\eCommerceProduct\eCommmerce.Product.Infrastructure\obj\Debug\net7.0\ref\eCommmerce.Product.Infrastructure.dll

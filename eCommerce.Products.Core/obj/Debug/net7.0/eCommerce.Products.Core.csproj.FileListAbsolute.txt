@@ -1,0 +1,11 @@
+D:\workspaces\workspace-study\eCommerceProduct\eCommerce.Products.Core\bin\Debug\net7.0\eCommerce.Products.Core.deps.json
+D:\workspaces\workspace-study\eCommerceProduct\eCommerce.Products.Core\bin\Debug\net7.0\eCommerce.Products.Core.dll
+D:\workspaces\workspace-study\eCommerceProduct\eCommerce.Products.Core\bin\Debug\net7.0\eCommerce.Products.Core.pdb
+D:\workspaces\workspace-study\eCommerceProduct\eCommerce.Products.Core\obj\Debug\net7.0\eCommerce.Products.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\workspaces\workspace-study\eCommerceProduct\eCommerce.Products.Core\obj\Debug\net7.0\eCommerce.Products.Core.AssemblyInfoInputs.cache
+D:\workspaces\workspace-study\eCommerceProduct\eCommerce.Products.Core\obj\Debug\net7.0\eCommerce.Products.Core.AssemblyInfo.cs
+D:\workspaces\workspace-study\eCommerceProduct\eCommerce.Products.Core\obj\Debug\net7.0\eCommerce.Products.Core.csproj.CoreCompileInputs.cache
+D:\workspaces\workspace-study\eCommerceProduct\eCommerce.Products.Core\obj\Debug\net7.0\eCommerce.Products.Core.dll
+D:\workspaces\workspace-study\eCommerceProduct\eCommerce.Products.Core\obj\Debug\net7.0\refint\eCommerce.Products.Core.dll
+D:\workspaces\workspace-study\eCommerceProduct\eCommerce.Products.Core\obj\Debug\net7.0\eCommerce.Products.Core.pdb
+D:\workspaces\workspace-study\eCommerceProduct\eCommerce.Products.Core\obj\Debug\net7.0\ref\eCommerce.Products.Core.dll
