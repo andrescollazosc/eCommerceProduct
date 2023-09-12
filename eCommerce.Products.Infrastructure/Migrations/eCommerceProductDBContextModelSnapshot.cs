@@ -10,7 +10,7 @@ using eCommerce.Products.Infrastructure;
 
 namespace eCommerce.Products.Infrastructure.Migrations
 {
-    [DbContext(typeof(eCommerceProductDBContext))]
+    [DbContext(typeof(ProductsDBContext))]
     partial class eCommerceProductDBContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
