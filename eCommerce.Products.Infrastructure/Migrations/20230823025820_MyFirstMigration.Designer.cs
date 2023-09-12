@@ -11,7 +11,7 @@ using eCommerce.Products.Infrastructure;
 
 namespace eCommerce.Products.Infrastructure.Migrations
 {
-    [DbContext(typeof(eCommerceProductDBContext))]
+    [DbContext(typeof(ProductsDBContext))]
     [Migration("20230823025820_MyFirstMigration")]
     partial class MyFirstMigration
     {

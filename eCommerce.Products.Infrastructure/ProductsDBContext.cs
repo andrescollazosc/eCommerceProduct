@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace eCommerce.Products.Infrastructure;
 
-public class eCommerceProductDBContext : DbContext
+public class ProductsDBContext : DbContext
 {
-    public eCommerceProductDBContext(DbContextOptions options) : base(options)
+    public ProductsDBContext(DbContextOptions options) : base(options)
     {
     }
 
