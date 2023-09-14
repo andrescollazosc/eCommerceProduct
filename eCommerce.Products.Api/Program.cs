@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddDbContext<eCommerceProductDBContext>(m =>
+builder.Services.AddDbContext<ProductsDBContext>(m =>
                 m.UseSqlServer(builder.Configuration.GetConnectionString("productsDB")), // TODO: separate name from connection string.
             ServiceLifetime.Singleton);
 
