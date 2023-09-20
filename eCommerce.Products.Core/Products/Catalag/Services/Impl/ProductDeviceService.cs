@@ -22,4 +22,20 @@ public class ProductDeviceService : IProductDeviceService
 
         return product;
     }
+
+    public async Task<bool> AddAsync(ProductDevice product)
+    {
+        product.CreatedOn = DateTime.UtcNow;
+        product.CreatedBy = "Default";
+
+        return await _productDeviceRepository.AddAsync(product);
+    }
+
+    public async Task<bool> UpdateAsync(ProductDevice product)
+    {
+        product.UpdatedOn = DateTime.UtcNow;
+        product.UpdatedBy = "Default";
+
+        return await _productDeviceRepository.UpdateAsync(product);
+    }
 }
