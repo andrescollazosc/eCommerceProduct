@@ -21,5 +21,13 @@ public class ProductDeviceProfile : Profile
             .ForMember(dest => dest.Status, o => o.MapFrom(src => src.Status.ToString()))
             .ForMember(dest => dest.BillingType, o => o.MapFrom(src => src.BillingType.ToString()))
             .ForPath(dest => dest.Details, o => o.MapFrom(src => new ProductDeviceDetails(src.Details.Brand, src.Details.Model, src.Details.Color, src.Details.Maker)));
+
+        // Update Product
+        CreateMap<UpdateProductDeviceDTO, ProductDevice>()
+            .ForMember(dest => dest.Category, o => o.MapFrom(src => src.Category.ToString()))
+            .ForMember(dest => dest.Status, o => o.MapFrom(src => src.Status.ToString()))
+            .ForMember(dest => dest.BillingType, o => o.MapFrom(src => src.BillingType.ToString()))
+            .ForPath(dest => dest.Details, o => o.MapFrom(src => new ProductDeviceDetails(src.Details.Brand, src.Details.Model, src.Details.Color, src.Details.Maker)));
+
     }
 }

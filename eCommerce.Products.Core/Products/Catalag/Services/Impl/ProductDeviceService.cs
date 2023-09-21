@@ -38,4 +38,10 @@ public class ProductDeviceService : IProductDeviceService
 
         return await _productDeviceRepository.UpdateAsync(product);
     }
+
+    public async Task<IEnumerable<ProductDevice>> GetAllAsync()
+    {
+        return await _productDeviceRepository.GetAllAsync();
+    }
+
 }

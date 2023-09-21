@@ -22,7 +22,7 @@ public class ProductController : Controller
         _mapper = mapper;
     }
 
-    [HttpGet]
+    [HttpGet("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -65,4 +65,52 @@ public class ProductController : Controller
             return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
         }
     }
+
+    [HttpPut]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult<ProductDeviceResponseDTO>> Put([FromBody] UpdateProductDeviceDTO updateProductDeviceDTO)
+    {
+        try
+        {
+            var updateProduct = _mapper.Map<ProductDevice>(updateProductDeviceDTO);
+
+            await _productDeviceService.UpdateAsync(updateProduct);
+
+            return _mapper.Map<ProductDeviceResponseDTO>(updateProduct);
+        }
+        catch (NotFoundException ex)
+        {
+            return NotFound(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+        }
+    }
+
+    [HttpGet]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+    public async Task<ActionResult<IEnumerable<ProductDeviceResponseDTO>>> GetAll()
+    {
+        try
+        {
+            
+            var products = await _productDeviceService.GetAllAsync();
+
+           return products.Select(productVal => _mapper.Map<ProductDeviceResponseDTO>(productVal)).ToList();
+        }
+        catch (NotFoundException ex)
+        {
+            return NotFound(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+        }
+    }
+
 }
