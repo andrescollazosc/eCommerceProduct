@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using eCommerce.Products.Infrastructure;
 
@@ -11,9 +12,11 @@ using eCommerce.Products.Infrastructure;
 namespace eCommerce.Products.Infrastructure.Migrations
 {
     [DbContext(typeof(ProductsDBContext))]
-    partial class eCommerceProductDBContextModelSnapshot : ModelSnapshot
+    [Migration("20230920025301_UpdatedAuditableFieldsUpdate")]
+    partial class UpdatedAuditableFieldsUpdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

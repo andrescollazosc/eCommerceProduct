@@ -2,6 +2,7 @@
 using eCommerce.Products.Core.Products.Catalag.Models;
 using eCommerce.Products.Core.Products.Catalag.Repositories;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace eCommerce.Products.Infrastructure.Repositories;
 
@@ -14,9 +15,12 @@ public class ProductDeviceRepository : IProductDeviceRepository
         _productsDBContext = productsDBContext;
     }
 
-    public Task<bool> AddAsync(ProductDevice productDevice)
+    public async Task<bool> AddAsync(ProductDevice productDevice)
     {
-        throw new NotImplementedException();
+        await _productsDBContext.Products.AddAsync(productDevice);
+        var result = await _productsDBContext.SaveChangesAsync();
+
+        return result > 0;
     }
 
     public Task<bool> DeleteAsync(int productId)
@@ -26,6 +30,7 @@ public class ProductDeviceRepository : IProductDeviceRepository
 
     public async Task<IEnumerable<ProductDevice>> GetAllAsync()
     {
+        // SELECT * FROM Products WHERE Status = "Active"
         var products = await _productsDBContext.Products.Where(product => product.Status == Status.Active).ToListAsync();
         
         return products;
@@ -38,8 +43,20 @@ public class ProductDeviceRepository : IProductDeviceRepository
         return product;
     }
 
-    public Task<bool> UpdateAsync(ProductDevice productDevice)
+    public async Task<bool> UpdateAsync(ProductDevice productDevice)
     {
-        throw new NotImplementedException();
+        var product = await GetProductByIdAsync(productDevice.Id);
+
+        product.Status = productDevice.Status;
+        product.UpdatedBy = productDevice.UpdatedBy;
+        product.UpdatedOn = productDevice.UpdatedOn;
+        product.Category = productDevice.Category;
+        product.BillingType = productDevice.BillingType;
+        product.Name = productDevice.Name;
+        product.Details = productDevice.Details;
+
+        var result = await _productsDBContext.SaveChangesAsync();
+        
+        return result > 0;
     }
 }

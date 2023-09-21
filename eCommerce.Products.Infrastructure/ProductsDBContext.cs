@@ -14,6 +14,7 @@ public class ProductsDBContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        // Refactor Jose.
         modelBuilder.Entity<ProductDevice>().HasKey(product => product.Id);
         modelBuilder.Entity<ProductDevice>().Property(product => product.Name).IsRequired().HasMaxLength(60);
         modelBuilder.Entity<ProductDevice>().Property(product => product.Category).HasConversion<string>().IsRequired();
@@ -30,7 +31,8 @@ public class ProductsDBContext : DbContext
         });
         details.Navigation(x => x.Details).IsRequired();
 
-        //Constraints
+        // Constraints
+        // David Refactor
         modelBuilder.Entity<ProductDevice>().HasCheckConstraint("Ck_Product_Category", $"{nameof(Category)} IN ('{Category.VoicePlanProduct}', '{Category.DeviceMobile}', '{Category.DeviceTable}','{Category.Other}')");
         modelBuilder.Entity<ProductDevice>().HasCheckConstraint("Ck_Product_Status", $"{nameof(Status)} IN ('{Status.Active}', '{Status.Inactive}')");
         modelBuilder.Entity<ProductDevice>().HasCheckConstraint("Ck_Product_BillingType", $"{nameof(BillingType)} IN ('{BillingType.Recurring}', '{BillingType.OneTime}')");
