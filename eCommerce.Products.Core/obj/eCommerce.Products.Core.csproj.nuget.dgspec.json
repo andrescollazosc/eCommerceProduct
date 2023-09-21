@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Andres Collazos\\git\\eCommerceProduct\\eCommerceProduct\\eCommerce.Products.Core\\eCommerce.Products.Core.csproj": {}
+    "D:\\workspaces\\workspace-study\\eCommerceProduct\\eCommerce.Products.Core\\eCommerce.Products.Core.csproj": {}
   },
   "projects": {
-    "C:\\Andres Collazos\\git\\eCommerceProduct\\eCommerceProduct\\eCommerce.Products.Core\\eCommerce.Products.Core.csproj": {
+    "D:\\workspaces\\workspace-study\\eCommerceProduct\\eCommerce.Products.Core\\eCommerce.Products.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Andres Collazos\\git\\eCommerceProduct\\eCommerceProduct\\eCommerce.Products.Core\\eCommerce.Products.Core.csproj",
+        "projectUniqueName": "D:\\workspaces\\workspace-study\\eCommerceProduct\\eCommerce.Products.Core\\eCommerce.Products.Core.csproj",
         "projectName": "eCommerce.Products.Core",
-        "projectPath": "C:\\Andres Collazos\\git\\eCommerceProduct\\eCommerceProduct\\eCommerce.Products.Core\\eCommerce.Products.Core.csproj",
-        "packagesPath": "C:\\Users\\acollazos\\.nuget\\packages\\",
-        "outputPath": "C:\\Andres Collazos\\git\\eCommerceProduct\\eCommerceProduct\\eCommerce.Products.Core\\obj\\",
+        "projectPath": "D:\\workspaces\\workspace-study\\eCommerceProduct\\eCommerce.Products.Core\\eCommerce.Products.Core.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "D:\\workspaces\\workspace-study\\eCommerceProduct\\eCommerce.Products.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\acollazos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,9 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/USPP/iSuite/_packaging/iSuite/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
@@ -61,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
