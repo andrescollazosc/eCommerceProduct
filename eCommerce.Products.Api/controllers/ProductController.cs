@@ -65,4 +65,7 @@ public class ProductController : Controller
             return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
         }
     }
+
+
+
 }
