@@ -1,8 +1,11 @@
+using eCommerce.Products.Core.Products.Catalag.Models;
 using eCommerce.Products.Core.Products.Catalag.Repositories;
 using eCommerce.Products.Core.Products.Catalag.Services;
 using eCommerce.Products.Core.Products.Catalag.Services.Impl;
+using eCommerce.Products.Core.Products.Catalag.Validators;
 using eCommerce.Products.Infrastructure;
 using eCommerce.Products.Infrastructure.Repositories;
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +23,9 @@ builder.Services.AddAutoMapper(typeof(Program));
 // ID
 builder.Services.AddScoped<IProductDeviceRepository, ProductDeviceRepository>();
 builder.Services.AddScoped<IProductDeviceService, ProductDeviceService>();
+
+// Validators
+builder.Services.AddSingleton<IValidator<ProductDevice>, ProductDeviceValidator>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

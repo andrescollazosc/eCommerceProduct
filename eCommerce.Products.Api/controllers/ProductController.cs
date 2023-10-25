@@ -98,7 +98,10 @@ public class ProductController : Controller
     {
         try
         {
-            
+            int result = 20;
+
+            Ejemplo(10, out result);
+
             var products = await _productDeviceService.GetAllAsync();
 
            return products.Select(productVal => _mapper.Map<ProductDeviceResponseDTO>(productVal)).ToList();
@@ -111,6 +114,11 @@ public class ProductController : Controller
         {
             return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
         }
+    }
+
+    private static void Ejemplo(int test, out int valueACC) {
+        valueACC = test + 15;
+        ///
     }
 
 }
