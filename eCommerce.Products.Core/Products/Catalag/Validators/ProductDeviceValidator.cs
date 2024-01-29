@@ -3,16 +3,14 @@ using FluentValidation;
 
 namespace eCommerce.Products.Core.Products.Catalag.Validators;
 
-public class ProductDeviceValidator : AbstractValidator<ProductDevice>
+public class ProductDeviceValidator : ProductBaseValidator<ProductDevice>
 {
     public ProductDeviceValidator()
     {
-        RuleFor(x => x.Name)
-            .NotEmpty().WithMessage("Field Name is required.")
-            .NotNull().WithMessage("Field Name can not be null.")
-            .MaximumLength(100)
-            .MinimumLength(5);
-
-        RuleFor(x => x.BillingType).IsInEnum().WithMessage("El mensaje ");
+        When(x => x.Category == Enums.Category.DeviceMobile || x.Category == Enums.Category.DeviceTable, () =>
+        {
+            RuleFor(x => x.Details.Brand).NotEmpty().WithMessage("The brand cannot be empty using this category.");
+            RuleFor(x => x.Details.Model).NotEmpty().WithMessage("The model cannot be empty using this category.");
+        });
     }
 }
