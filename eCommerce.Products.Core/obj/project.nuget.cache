@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pa+zvqfFOWfIM3axtM9J5QIuuFYqGgYUJUxLDKfhjGMm7buWGhXzWRDsAo09yqN0X+RcaT4FKPQM3GwjI2UHjQ==",
+  "dgSpecHash": "co2kyDs+3/A=",
   "success": true,
-  "projectFilePath": "C:\\Andres Collazos\\git\\eCommerceProduct\\eCommerceProduct\\eCommerce.Products.Core\\eCommerce.Products.Core.csproj",
+  "projectFilePath": "C:\\repos\\eCommerceProduct\\eCommerce.Products.Core\\eCommerce.Products.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\acollazos\\.nuget\\packages\\fluentvalidation\\11.7.1\\fluentvalidation.11.7.1.nupkg.sha512"
+    "C:\\Users\\AlejandroMartinez\\.nuget\\packages\\fluentvalidation\\11.7.1\\fluentvalidation.11.7.1.nupkg.sha512"
   ],
   "logs": []
 }
