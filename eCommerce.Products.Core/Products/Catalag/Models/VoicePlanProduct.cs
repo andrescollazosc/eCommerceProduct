@@ -2,6 +2,5 @@
 {
     public class VoicePlanProduct:ProductBase
     {
-        //public int Details { get; set; }
     }
 }

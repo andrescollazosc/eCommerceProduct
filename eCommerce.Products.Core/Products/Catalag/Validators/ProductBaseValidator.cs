@@ -13,7 +13,7 @@ namespace eCommerce.Products.Core.Products.Catalag.Validators
             .MaximumLength(100)
             .MinimumLength(5);
 
-            RuleFor(x => x.BillingType).IsInEnum().WithMessage("El mensaje ");
+            RuleFor(x => x.BillingType).IsInEnum().WithMessage("BillingType is an Enum.");
         }
     }
 }
