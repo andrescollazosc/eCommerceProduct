@@ -6,7 +6,7 @@ using eCommerce.Products.Core.Products.Catalag.Validators;
 using eCommerce.Products.Infrastructure.Repositories;
 using FluentValidation;
 
-namespace eCommerce.Products.Api.DependencyInjections
+namespace eCommerce.Products.Api.Extensions
 {
     public static class DependencyInjectionExtensions
     {

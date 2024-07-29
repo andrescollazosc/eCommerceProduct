@@ -1,4 +1,4 @@
-using eCommerce.Products.Api.DependencyInjections;
+using eCommerce.Products.Api.Extensions;
 using eCommerce.Products.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
